@@ -10,6 +10,8 @@ Deployment succeeded on November 16, 2026. All 5 unit tests, 53 PostgreSQL secur
 
 In Supabase Authentication → URL Configuration, set Site URL to `https://fernandezsebastien007.github.io/handshake/`, add that same exact URL to Redirect URLs, and retain `http://localhost:5173/` as a development redirect. The trailing slash and `/handshake/` path are required. This dashboard change requires owner access; frontend configuration cannot change it.
 
+The owner confirmed those initial Supabase redirects are saved. The intended RainbowFlush address is now **`https://clubs.rainbowflush.com/handshake/`**. A separate Clubs root site is prepared in [the Clubs hosting source and setup guide](hosting/clubs/README.md). The custom address is pending DreamHost DNS and GitHub domain verification; keep using the current live link until the custom domain passes HTTPS checks. Handshake retains its `/handshake/` build/worker scope, and the WordPress main site keeps its existing hosting.
+
 ## Implemented
 
 - Supabase email/password registration, confirmation, sign-in, persistent sessions, sign-out, password recovery, and unique private profiles.
