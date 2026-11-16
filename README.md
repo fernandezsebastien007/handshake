@@ -4,7 +4,9 @@ A mobile-first React/TypeScript/Vite prototype for private, mutual real-world co
 
 ## Hosted prototype
 
-The owner approved GitHub Pages deployment. The source repository is [fernandezsebastien007/handshake](https://github.com/fernandezsebastien007/handshake). The configured Pages address is **https://fernandezsebastien007.github.io/handshake/**; it becomes available after the manual deployment workflow succeeds. The repository contains application source and placeholder configuration, not the local `.env` or user account data. Public Supabase configuration is supplied through GitHub Actions repository variables.
+The owner approved GitHub Pages deployment. The source repository is [fernandezsebastien007/handshake](https://github.com/fernandezsebastien007/handshake). The live prototype is **https://fernandezsebastien007.github.io/handshake/**. The repository contains application source and placeholder configuration, not the local `.env` or user account data. Public Supabase configuration is supplied through GitHub Actions repository variables.
+
+Deployment succeeded on November 16, 2026. All 5 unit tests, 53 PostgreSQL security/lifecycle checks, 22 browser tests, and the production build passed in GitHub Actions. A separate browser check against the actual HTTPS site verified sign-in/registration screens, the real Supabase configuration and reachable Auth settings, manifest/icons under `/handshake/`, mobile layout, service-worker control, and offline reload without caching Supabase responses. No real signup was submitted by the automated hosted-site check; email confirmation and two physical phones still need manual verification.
 
 In Supabase Authentication → URL Configuration, set Site URL to `https://fernandezsebastien007.github.io/handshake/`, add that same exact URL to Redirect URLs, and retain `http://localhost:5173/` as a development redirect. The trailing slash and `/handshake/` path are required. This dashboard change requires owner access; frontend configuration cannot change it.
 
